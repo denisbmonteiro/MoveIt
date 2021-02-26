@@ -47,7 +47,10 @@ export function ChallengesProvider({ children }: ChallengesProviderProps) {
 
         setActiveChallenge(challenge);
 
-        new Audio('/notification.mp3').play();
+        const notification = new Audio('/notification.mp3');
+
+        notification.volume = 0.5;
+        notification.play();
 
         if (Notification.permission === 'granted') {
             new Notification('Novo desafio!', {
