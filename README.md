@@ -32,8 +32,8 @@ This project was made during the Next Level Week #4 bootcamp provided by RocketS
 
 - First clone the repository to your local computer
 - Navigate to the project folder
-- And run the development server:
+- Run the development server:
 
-'''
-    yarn dev
-'''
+```
+yarn dev
+```
